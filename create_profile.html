@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/user_creation.css">
+    </head>
+    <body>
+        <h1>
+            add a user
+        </h1>
+        
+        <form action="./api/check_user.php" method="post">
+            <label for="firstname">
+                Firstname
+            </label>
+            <br>
+            <input type="text" id="firstname" name="firstname" placeholder="your firstname">
+            <br>
+            <label for="lastname">
+                Lastname
+            </label>
+            <br>
+            <input type="text" id="lastname" name="lastname" placeholder="your lastname">
+            <br>
+            <label for="age">
+                Age
+            </label>
+            <br>
+            <input type="number" id="age" name="age" placeholder="age">
+            <br>
+            <input type="radio" name="gender" value="male" id="gender_male"/>
+                <label for="gender_male">
+                    Male
+                </label>
+
+                <br/>
+
+                <input type="radio" name="gender" value="female" id="gender_female" /> 
+                <label for="gender_female">
+                    Female
+                </label>
+
+                <br/>
+
+                <input type="radio" name="gender" value="x" id="gender_x"/>
+                <label for="gender_x">
+                    Gender X
+                </label>
+
+                <br/>
+            <label for="description">
+                Tell us about yourself in 400 Characters or less!
+            </label>
+            <br>
+            <textarea name="description" id="description" cols="30" rows="10" >
+                
+            </textarea>
+                <br>
+
+
+            <input type="submit" value="create user" class="standardButton">
+            <a href="/vote.html" class="standardButton">
+                Vote On Users
+            </a>
+        </form>
+    </body>
+</html>
